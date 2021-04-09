@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  ob-product:
+    container_name: ob-product
+    build:
+      context: .
+      dockerfile: Dockerfile.slim
+    image: ob-product:latest
+    ports: 
+      - "3000:3000"
+    tty: true 
+
+
+
+
